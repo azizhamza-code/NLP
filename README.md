@@ -31,7 +31,7 @@
 
 #### the idea
 
-  [images](basic/infos/idea_slot.png)
+  ![images](basic/infos/idea_slot.png)
 
 ### 3. represent the meaning :
 
