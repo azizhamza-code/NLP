@@ -27,11 +27,11 @@
 **_project idea_** :  making chat-bot using semantic slot :
 
 
-  ![images](basic/infos/sem_slot.png)
+  ![images](./info/sem_slot.png)
 
 #### the idea
 
-  ![images](basic/infos/idea_slot.png)
+  ![images](./info/idea_slot.png)
 
 ### 3. represent the meaning :
 
@@ -53,14 +53,15 @@
       Conversational(just hold the dialog )
 
 
+---
+
+
+## NLP Pyramid :
+
+![images](./info/nlp_pyramid.png)
 
 
 
+**_note_** : we can use some black-box like *nltk* for the low level stage (morphology , syntax) 
 
-
-
-
-
-
-
-
+            for example for : preprocessing (tokenization , normalization) , or parsing and tagging using pre-trained model
