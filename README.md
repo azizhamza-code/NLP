@@ -27,7 +27,7 @@
 **_project idea_** :  making chat-bot using semantic slot :
 
 
- <img src=".\infos\sem_slot.png">
+  ![images](basic/infos/sem_slot.png)
 
 #### the idea
 
