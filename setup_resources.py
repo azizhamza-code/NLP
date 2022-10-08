@@ -49,7 +49,7 @@ def data_bag_of_words(target_dir="data", force=False):
 
     download_iter(target_dir=target_dir,
                   fns=["train.tsv", "validation.tsv",
-                       "test.tsv", "text_prepare_tests.tsv"],
+                       "test.tsv", "text_prepare_tests.tsv","encoding.json"],
                   version="datav1",
                   force=False
 
