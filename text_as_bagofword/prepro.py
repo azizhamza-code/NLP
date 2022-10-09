@@ -143,6 +143,6 @@ class data(object):
         self.train = data.encode_datafram_label(encoder, self.train)
         self.val = data.encode_datafram_label(encoder, self.val)
 
-        self.x_train, self.y_train = self.train.iloc[:,0].values, np.stack(self.train.iloc[:, 1].values)
-        self.x_val, self.y_val = self.val.iloc[:,0].values, np.stack(self.val.iloc[:, 1].values)
+        self.x_train_df , self.x_train, self.y_train = self.train.iloc[:,0],self.train.iloc[:,0].values, np.stack(self.train.iloc[:, 1].values)
+        self.x_val_df,self.x_val, self.y_val = self.train.iloc[:,0],self.val.iloc[:,0].values, np.stack(self.val.iloc[:, 1].values)
         self.x_test = self.test.iloc[:,0].values
