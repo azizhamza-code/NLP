@@ -114,6 +114,13 @@ class data(object):
         self.val = val
         self.test = test
 
+        self.x_train = None
+        self.x_val = None
+        self.x_test = None
+
+        self.y_train = None
+        self.y_val = None
+
     @staticmethod
     def clean_datafram(df, test=False):
         df.iloc[:, 0] = df.iloc[:, 0].apply(lambda x: clean_text(x, stem=True))
@@ -136,4 +143,6 @@ class data(object):
         self.train = data.encode_datafram_label(encoder, self.train)
         self.val = data.encode_datafram_label(encoder, self.val)
 
-
+        self.x_train, self.y_train = self.train.iloc[:,0].values, np.stack(self.train.iloc[:, 1].values)
+        self.x_val, self.y_val = self.val.iloc[:,0].values, np.stack(self.val.iloc[:, 1].values)
+        self.x_test = self.test.iloc[:,0].values

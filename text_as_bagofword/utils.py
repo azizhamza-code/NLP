@@ -43,7 +43,7 @@ def import_data(ration=0.3, encoders_data=True):
     else:
         return train, val, test
 
-# TODO add loging
+#TODO: add loging
 
 
 def get_squezed(df, num_sample):
